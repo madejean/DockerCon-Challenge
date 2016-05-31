@@ -25,9 +25,9 @@ exec $input
 	    ;;
         "Images")
             echo "run: docker run docker/whalesay cowsay WhAllo "
-echo "Please enter input: "
-read input
-exec $input
+	    echo "Please enter input: "
+	    read input
+	    exec $input
             ;;
         "Quit")
             break
