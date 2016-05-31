@@ -24,7 +24,7 @@ read input
 exec $input
 	    ;;
         "Images")
-            echo "run: docker run docker/whalesay cowsay WhAllo "
+            echo "run: docker run docker/whalesay cowsay boo "
 echo "Please enter input: "
 read input
 exec $input
