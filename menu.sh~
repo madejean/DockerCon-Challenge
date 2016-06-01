@@ -22,12 +22,9 @@ run:  brew cask install dockertoolbox"
 echo "Please enter command: "
 read input
 $input
-echo "now run: docker run hello-world"
-read input
-$input
 	    ;;
         "Images")
-            echo "To Download an image into the container you can run: docker run <yourimage>; Here is an example on how to load a docker whale image saying whAllo!
+            echo "To Download an image into the container you can run: docker run <yourimage> here is an example on how to load a docker whale image saying whAllo!
 run: docker run docker/whalesay cowsay whAllo! "
 	    echo "Please enter command: "
 	    read input
