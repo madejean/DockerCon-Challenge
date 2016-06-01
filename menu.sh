@@ -7,21 +7,22 @@ select opt in "${options[@]}"
 do
     case $opt in
         "Intro")
-            echo "Docker provides an integrated technology suite that enables development and IT operations teams to build, ship, and run distributed applications anywhere. 
+            echo "Docker provides an integrated technology suite that enables development and IT operations teams to build, ship, and run distributed applications anywhere.
 Please follow this tutorial to install dockertoolbox, run images and containers and leanm more on how to use Docker."
 	    ;;
         "Install")
-            echo "Dockertoolbox comes with: 
-   - Docker CLI client for running Docker Engine to create images and containers 
+            echo "Dockertoolbox comes with:
+   - Docker CLI client for running Docker Engine to create images and containers
    - Docker Machine so you can run Docker Engine commands from Mac OS X terminals
    - Docker Compose for running the docker-compose command
    - Kitematic, the Docker GUI
    - the Docker QuickStart shell preconfigured for a Docker command-line environment
-   - Oracle VM VirtualBox 
-run:  brew cask install dockertoolbox" 
+   - Oracle VM VirtualBox
+run:  brew cask install dockertoolbox"
 echo "Please enter command: "
 read input
 $input
+eval "$(docker-machine env default)"
 echo "now run: docker run hello-world"
 read input
 $input
