@@ -2,15 +2,15 @@
 # Bash Menu Script
 
 PS3='Please enter your choice: '
-options=("Intro" "Install" "Images" "Status" "Exit")
+options=("WhAllo" "Install docker toolbox" "Run Images" "Build your own image and your good to go!" "WhaleBye")
 select opt in "${options[@]}"
 do
     case $opt in
-        "Intro")
+        "WhAllo")
             echo "Docker provides an integrated technology suite that enables development and IT operations teams to build, ship, and run distributed applications anywhere.
 Please follow this tutorial to install dockertoolbox, run images and containers and leanm more on how to use Docker."
 	    ;;
-        "Install")
+        "Install docker toolbox")
             echo "Dockertoolbox comes with:
    - Docker CLI client for running Docker Engine to create images and containers
    - Docker Machine so you can run Docker Engine commands from Mac OS X terminals
@@ -27,7 +27,7 @@ echo "now run: docker run hello-world"
 read input
 $input
 	    ;;
-        "Images")
+        "Run Images")
             echo "To Download an image into the container you can run: docker run <yourimage>; Here is an example on how to load a docker whale image saying whAllo!
 run: docker run docker/whalesay cowsay whAllo! "
 	    echo "Please enter command: "
@@ -40,13 +40,10 @@ you can check to see the list of images your have on you local system buy runnin
              read input
              $input
              ;;
-        "Status")
-	    echo "you can check to see the list of images your have on you local system buy running the command: docker images"
-            echo "Please enter command: "
-            read input
-            $input
+        "Build your own image and your good to go!")
+	    echo "To build your own images you'll have to create a directory using the command: mkdir mydockerbuild, then go into that directory by typping: cd mydockerbuild . Once in the directory you can create a Dockerfile and run you own program"
             ;;
-	"Exit")
+	"WhaleBye")
 	    break
 	    ;;
         *) echo invalid option;;
