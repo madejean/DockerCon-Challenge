@@ -22,6 +22,7 @@ run:  brew cask install dockertoolbox"
 echo "Please enter command: "
 read input
 $input
+eval "$(docker-machine env default)"
 echo "now run: docker run hello-world"
 read input
 $input
@@ -32,7 +33,13 @@ run: docker run docker/whalesay cowsay whAllo! "
 	    echo "Please enter command: "
 	    read input
              $input
-           ;;
+	     echo "
+
+you can check to see the list of images your have on you local system buy running the command: docker images"
+             echo "Please enter command: "
+             read input
+             $input
+             ;;
         "Status")
 	    echo "you can check to see the list of images your have on you local system buy running the command: docker images"
             echo "Please enter command: "
